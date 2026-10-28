@@ -1,0 +1,10 @@
+/* TKC Group · Tipografía web mediante Adobe Fonts (proyecto snc0oco).
+   No modifica tamaño, interlineado, pesos ni composición visual existentes. */
+:root { --tkc-font: "proxima-nova", Arial, Helvetica, sans-serif; }
+html, body, button, input, select, textarea, option {
+  font-family: var(--tkc-font) !important;
+}
+/* Algunos componentes tienen su propia familia explícita: conservar jerarquía y pesos. */
+h1, h2, h3, h4, h5, h6, p, a, span, li, label, small, strong, b, blockquote, figcaption {
+  font-family: var(--tkc-font) !important;
+}
