@@ -1,0 +1,45 @@
+/* TKC V21: Navbar aislado del CSS histórico. Tres zonas: marca / centro / CTA. */
+.tkc-shell-header{position:sticky;top:0;z-index:10000;width:100%;background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(37,0,69,.055);box-shadow:0 4px 22px rgba(37,0,69,.055);}
+.tkc-shell-header,.tkc-shell-header *{box-sizing:border-box}
+.tkc-shell-nav{width:100%;max-width:1600px;height:76px;margin:auto;padding:0 clamp(20px,2.2vw,38px);display:grid;grid-template-columns:minmax(205px,1fr) auto minmax(170px,1fr);align-items:center;gap:18px;}
+.tkc-shell-panel{display:contents}
+.tkc-shell-logo{grid-column:1;justify-self:start;display:flex;align-items:center;min-width:0;text-decoration:none}
+.tkc-shell-logo img{display:block;width:205px;max-width:100%;height:auto;max-height:61px;object-fit:contain;object-position:left center}
+.tkc-shell-links{grid-column:2;display:flex;align-items:center;justify-content:center;gap:clamp(9px,1.15vw,20px);white-space:nowrap;min-width:0}
+.tkc-shell-header .tkc-shell-links>a,.tkc-shell-header .tkc-lines-toggle{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 0;border:0;background:transparent;color:#250045;font-family:inherit;font-size:clamp(12px,.9vw,15px);font-weight:500;line-height:1.35;text-decoration:none;cursor:pointer;white-space:nowrap}
+.tkc-shell-header .tkc-shell-links>a:not(.tkc-zone):after,.tkc-shell-header .tkc-lines-toggle:after{content:'';position:absolute;bottom:1px;left:0;right:0;height:2px;background:#38b9ec;transform:scaleX(0);transform-origin:left;transition:transform .22s ease}
+.tkc-shell-header .tkc-shell-links>a:hover:after,.tkc-shell-header .tkc-shell-links>a[aria-current=page]:after,.tkc-shell-header .tkc-lines-toggle:hover:after,.tkc-shell-header .tkc-lines-toggle.is-current:after{transform:scaleX(1)}
+.tkc-shell-header .tkc-shell-links>a:hover,.tkc-shell-header .tkc-shell-links>a[aria-current=page],.tkc-shell-header .tkc-lines-toggle.is-current{color:#008ec6}
+.tkc-shell-header .tkc-zone{border:1px solid #a3def5!important;background:#ecf8ff!important;border-radius:999px!important;padding:8px 12px!important;transition:background .2s,color .2s}
+.tkc-shell-header .tkc-zone:hover{background:#d9f2fc!important;color:#250045!important}
+.tkc-shell-cta{grid-column:3;justify-self:end;display:inline-flex;justify-content:center;align-items:center;padding:13px 24px;min-width:137px;border-radius:999px;background:#38b9ec;color:#250045;text-decoration:none;font-size:14px;font-weight:600;line-height:1.25;font-family:inherit;box-shadow:0 8px 18px rgba(37,0,69,.07);white-space:nowrap;transition:background .2s,color .2s,transform .2s}
+.tkc-shell-header .tkc-shell-cta:hover{background:#250045;color:white;transform:translateY(-2px)}
+.tkc-shell-header .tkc-shell-cta[aria-current=page]{box-shadow:0 0 0 3px rgba(56,185,236,.22)}
+.tkc-lines{position:relative;display:flex;align-items:center}
+.tkc-lines-toggle svg{width:13px;height:13px;transition:transform .2s ease}
+.tkc-lines:hover .tkc-lines-toggle svg,.tkc-lines.is-open .tkc-lines-toggle svg{transform:rotate(180deg)}
+.tkc-lines-menu{position:absolute;top:calc(100% + 9px);left:50%;transform:translateX(-50%) translateY(8px);display:grid;gap:2px;min-width:200px;padding:9px;background:white;border:1px solid #e9e2f2;box-shadow:0 16px 34px rgba(37,0,69,.15);border-radius:14px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s,transform .18s,visibility .18s;z-index:10001}
+.tkc-lines:hover .tkc-lines-menu,.tkc-lines:focus-within .tkc-lines-menu,.tkc-lines.is-open .tkc-lines-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);pointer-events:auto}
+.tkc-lines-menu a{display:block;padding:12px 14px;text-decoration:none;color:#250045;font-size:14px;line-height:1.25;font-weight:500;border-radius:8px;white-space:nowrap;border-left:3px solid transparent;transition:background .18s,transform .18s}
+.tkc-lines-menu a:hover,.tkc-lines-menu a[aria-current=page]{background:#f7f8fc;transform:translateX(2px)}
+.tkc-lines-menu a[data-line=corp]:hover,.tkc-lines-menu a[data-line=corp][aria-current=page]{border-left-color:#006d94}
+.tkc-lines-menu a[data-line=home]:hover,.tkc-lines-menu a[data-line=home][aria-current=page]{border-left-color:#10a9b8}
+.tkc-lines-menu a[data-line=hidriko]:hover,.tkc-lines-menu a[data-line=hidriko][aria-current=page]{border-left-color:#0087a6}
+.tkc-lines-menu a[data-line=security]:hover,.tkc-lines-menu a[data-line=security][aria-current=page]{border-left-color:#eea400}
+.tkc-shell-toggle{display:none}
+@media(max-width:1150px){
+.tkc-shell-nav{height:72px;grid-template-columns:1fr auto;gap:12px;padding:0 20px}
+.tkc-shell-logo img{width:190px;max-height:57px}
+.tkc-shell-toggle{display:flex;grid-column:2;align-items:center;justify-content:center;width:44px;height:44px;border:0;border-radius:12px;background:#250045;color:white;cursor:pointer;font-size:25px}
+.tkc-shell-panel{position:absolute;top:100%;left:12px;right:12px;background:white;border:1px solid #eae2ef;border-radius:0 0 18px 18px;padding:14px;box-shadow:0 20px 40px rgba(37,0,69,.16);display:none;flex-direction:column;max-height:calc(100dvh - 85px);overflow:auto}
+.tkc-shell-panel.is-open{display:flex}
+.tkc-shell-links{flex-direction:column;align-items:stretch;gap:0;white-space:normal}
+.tkc-shell-header .tkc-shell-links>a,.tkc-shell-header .tkc-lines-toggle{display:flex;justify-content:flex-start;width:100%;font-size:16px;padding:12px 10px}
+.tkc-lines{display:block}
+.tkc-lines-menu{position:static;min-width:0;left:auto;transform:none!important;display:none;opacity:1;visibility:visible;pointer-events:auto;box-shadow:none;border:0;border-radius:10px;padding:0 0 0 12px;background:#f9f8fc;margin-bottom:5px}
+.tkc-lines:hover .tkc-lines-menu,.tkc-lines:focus-within .tkc-lines-menu{display:none}
+.tkc-lines.is-open .tkc-lines-menu{display:grid}
+.tkc-shell-cta{align-self:stretch;justify-self:stretch;margin-top:12px;width:100%;font-size:15px}
+}
+@media(max-width:480px){.tkc-shell-nav{padding:0 14px;height:68px}.tkc-shell-logo img{width:166px}.tkc-shell-panel{left:8px;right:8px}}
+@media(prefers-reduced-motion:reduce){.tkc-shell-header *{transition:none!important}}

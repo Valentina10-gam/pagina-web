@@ -1,0 +1,7 @@
+/* V41: iconos WhatsApp y espaciado coherente en CTAs */
+a.tkc-whatsapp-button-v41{display:inline-flex!important;align-items:center;justify-content:center;gap:10px;white-space:normal;text-align:center}
+a.tkc-whatsapp-button-v41 .tkc-whatsapp-svg-v41{width:23px;height:23px;flex:0 0 23px;display:inline-block;object-fit:contain;filter:none!important}
+.tkc-whatsapp-icon.tkc-editable-media img{display:block;width:100%;height:100%;object-fit:contain}
+.tkc-whatsapp-card{align-items:center}
+.tkc-whatsapp-icon.tkc-editable-media{max-width:210px;margin-inline:auto}
+@media(max-width:700px){a.tkc-whatsapp-button-v41{gap:8px}a.tkc-whatsapp-button-v41 .tkc-whatsapp-svg-v41{width:21px;height:21px;flex-basis:21px}.tkc-whatsapp-icon.tkc-editable-media{max-width:150px}}

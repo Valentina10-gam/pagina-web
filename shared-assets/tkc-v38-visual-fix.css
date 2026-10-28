@@ -1,0 +1,14 @@
+/* V38: fondos visibles sin depender de capas con z-index negativo */
+.tkc-hero-v36.tkc-full-photo-hero{
+  background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.92) 24%,rgba(255,255,255,.73) 42%,rgba(255,255,255,.10) 72%),url('como-trabajamos-hero-v36.webp') center right / cover no-repeat !important;
+}
+.tkc-hero-v36.tkc-full-photo-hero::before,
+.tkc-hero-v36.tkc-full-photo-hero::after{content:none!important;display:none!important}
+.tkc-hero-v36 .hero-grid{position:relative;z-index:1}
+@media(max-width:760px){
+.tkc-hero-v36.tkc-full-photo-hero{background:linear-gradient(180deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.95) 50%,rgba(255,255,255,.48) 100%),url('como-trabajamos-hero-v36.webp') 66% center / cover no-repeat!important}
+}
+.blog-hero{background:linear-gradient(90deg,rgba(252,251,255,.92) 0%,rgba(245,248,255,.91) 44%,rgba(244,248,255,.87) 100%),url('blog-hero-sutil-v38.webp') center right / cover no-repeat!important}
+.blog-hero-float{display:none!important}
+.blog-hero::before,.blog-hero::after{pointer-events:none}
+@media(max-width:760px){.blog-hero{background:linear-gradient(110deg,rgba(252,251,255,.94),rgba(243,248,255,.91)),url('blog-hero-sutil-v38.webp') 63% center / cover no-repeat!important}}

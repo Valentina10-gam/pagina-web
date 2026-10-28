@@ -1,0 +1,6 @@
+/* V37: recovered Cómo trabajamos hero visual */
+.tkc-hero-v36{position:relative!important;isolation:isolate;background:#edf5ff!important}
+.tkc-hero-v36::before{content:""!important;display:block!important;position:absolute!important;inset:0!important;z-index:-2!important;opacity:1!important;background:url("como-trabajamos-hero-v36.webp") center right/cover no-repeat!important;pointer-events:none!important}
+.tkc-hero-v36::after{content:""!important;display:block!important;position:absolute!important;inset:0!important;z-index:-1!important;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.91) 22%,rgba(255,255,255,.76) 38%,rgba(255,255,255,.22) 60%,rgba(255,255,255,.00) 85%)!important;pointer-events:none!important}
+.tkc-hero-v36 .hero-grid{position:relative!important;z-index:1!important}
+@media(max-width:760px){.tkc-hero-v36::before{background-position:65% center!important}.tkc-hero-v36::after{background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(255,255,255,.90) 46%,rgba(255,255,255,.38) 100%)!important}}

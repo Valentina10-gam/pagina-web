@@ -1,0 +1,31 @@
+/* V34: cierre de Cómo trabajamos y pictogramas originales */
+#cierre.tkc-general-process-v31{
+  width:min(1250px,calc(100% - 64px))!important;max-width:1250px!important;
+  min-height:420px!important;margin:64px auto!important;padding:clamp(36px,5.5vw,78px)!important;
+  display:grid!important;grid-template-columns:minmax(0,1.45fr) minmax(200px,.65fr)!important;
+  align-items:center!important;gap:clamp(24px,5vw,80px)!important;
+  background:linear-gradient(115deg,#250045 0%,#39126c 37%,#334caa 73%,#0b8dcc 100%)!important;
+  color:#fff!important;position:relative!important;isolation:isolate;overflow:hidden!important;border-radius:30px!important;
+  box-shadow:0 28px 68px #25004530!important;
+}
+#cierre.tkc-general-process-v31::before,#cierre.tkc-general-process-v31::after{
+  content:'';position:absolute;pointer-events:none;z-index:-1;
+  width:260px;height:245px;clip-path:polygon(50% 0%,100% 100%,0% 100%);
+  background:linear-gradient(150deg,#b7eefe35,#d9b8ff13);animation:tkcTriGlide 8s ease-in-out infinite alternate;
+}
+#cierre.tkc-general-process-v31::before{right:3%;top:-110px;transform:rotate(15deg)}
+#cierre.tkc-general-process-v31::after{width:180px;height:150px;left:25%;bottom:-65px;opacity:.65;animation-delay:-4s;animation-duration:10s}
+@keyframes tkcTriGlide{0%{translate:0 0;rotate:-6deg;opacity:.34}100%{translate:22px 28px;rotate:8deg;opacity:.8}}
+#cierre.tkc-general-process-v31 .extra-copy{width:100%!important;max-width:750px!important;min-width:0!important;position:relative;z-index:1}
+#cierre.tkc-general-process-v31 h2{font-size:clamp(38px,4.4vw,65px)!important;max-width:720px!important;line-height:1.08!important;margin:16px 0 23px!important}
+#cierre.tkc-general-process-v31 p{font-size:clamp(17px,1.5vw,21px)!important;line-height:1.58!important;max-width:660px!important}
+#cierre.tkc-general-process-v31 .close-actions{display:flex!important;align-items:center;flex-wrap:wrap!important;gap:13px!important;margin-top:30px!important}
+#cierre.tkc-general-process-v31 .close-actions .button{width:auto!important;white-space:normal!important;text-align:center;min-height:50px;display:inline-flex;align-items:center;justify-content:center;padding:13px 22px!important;margin:0!important}
+#cierre.tkc-general-process-v31 img.close-art{width:min(100%,330px)!important;max-width:330px!important;max-height:320px!important;justify-self:center!important;object-fit:contain!important;position:relative!important;z-index:1!important;filter:drop-shadow(0 18px 26px #1f004555)!important}
+.timeline-card .timeline-icon{width:62px!important;height:62px!important;clip-path:none!important;border:1px solid #c5e5f5!important;border-radius:17px!important;background:#f0faff!important;display:grid!important;place-items:center!important;left:17px!important;top:20px!important}
+.timeline-card .timeline-icon .tkc-process-icon{display:block!important;width:46px!important;height:46px!important;max-height:46px!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;position:static!important}
+.timeline-card{padding-left:95px!important}
+.timeline-card:hover .timeline-icon{transform:translateY(-4px) scale(1.06)!important}
+@media(max-width:850px){#cierre.tkc-general-process-v31{grid-template-columns:1fr!important;text-align:left!important;gap:20px!important;width:calc(100% - 36px)!important;padding:36px 28px!important}#cierre.tkc-general-process-v31 img.close-art{width:min(65%,230px)!important;max-height:200px!important}#cierre.tkc-general-process-v31 h2{font-size:clamp(34px,8vw,50px)!important}}
+@media(max-width:480px){#cierre.tkc-general-process-v31{padding:29px 22px!important;border-radius:22px!important;margin:35px auto!important}#cierre.tkc-general-process-v31 .close-actions .button{width:100%!important}#cierre.tkc-general-process-v31 img.close-art{width:190px!important}.timeline-card{padding-left:85px!important}.timeline-card .timeline-icon{width:52px!important;height:52px!important}.timeline-card .timeline-icon .tkc-process-icon{width:39px!important;height:39px!important}}
+@media(prefers-reduced-motion:reduce){#cierre.tkc-general-process-v31::before,#cierre.tkc-general-process-v31::after{animation:none!important}}

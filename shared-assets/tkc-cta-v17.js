@@ -1,0 +1,8 @@
+document.addEventListener('DOMContentLoaded',()=>{
+const path=location.pathname.split('/').filter(Boolean);const page=path[path.length-2]||'TKC_Inicio_v4';
+const subjects={'tkc-corp':'control de plagas para empresas','tkc-home':'control de plagas en mi hogar','hidriko':'sistemas de agua y servicios Hídriko','tkc-security':'extintores y planes de emergencia TKC Security','contacto':'asesoría comercial','como-trabajamos':'cómo trabaja TKC','blog':'los servicios de TKC Group'};
+const url='https://api.whatsapp.com/send?phone=573008400772&text='+encodeURIComponent('Hola, quiero recibir información sobre '+(subjects[page]||'los servicios de TKC Fumigaciones Group')+'.');
+// Complemento a la implementación previa: enlaces con una única acción comercial.
+document.querySelectorAll('a').forEach(a=>{const t=(a.textContent||'').replace(/\s+/g,' ').trim().toLocaleLowerCase('es');if(/hablar por whatsapp|escribir por whatsapp/.test(t)){a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.removeAttribute('data-pending')}if(/solicitar asesor[ií]a|solicitar atenci[oó]n para mi hogar/.test(t)){a.href=page==='contacto'?'#formulario':'../contacto/index.html#formulario';a.removeAttribute('target')}});
+let btn=document.querySelector('.tkc-float-whatsapp');if(btn){btn.href=url;btn.target='_blank';btn.rel='noopener noreferrer';btn.setAttribute('aria-label','Abrir WhatsApp de TKC');const sp=btn.querySelector('span');if(sp)sp.textContent='Chatea con TKC';}
+});

@@ -1,0 +1,34 @@
+
+/* V32: line-specific tonal backgrounds and accessible contrast */
+.tkc-floating-close-v31{padding-block:clamp(42px,5.5vw,84px)!important}
+.tkc-floating-close-v31 .tkc-floating-close-inner-v31{background:linear-gradient(125deg,#fff 5%,var(--tkc-card-tint,#edf8ff) 100%)!important}
+.tkc-floating-close-v31.tkc-close-corp-v30{--tkc-card-tint:#e3f3fa;background:linear-gradient(123deg,#d6edf7,#eaf8fd 55%,#d9eafb)!important}
+.tkc-floating-close-v31.tkc-close-home-v30{--tkc-card-tint:#e5f8fa;background:linear-gradient(123deg,#e0f6fb,#e8fbfa 56%,#dcedfc)!important}
+body:has(>main .tkc-floating-close-v31) .tkc-floating-close-v31 .tkc-floating-close-inner-v31{overflow:visible}
+.tkc-floating-close-v31 .close-graphic img{width:min(100%,320px)!important}
+.tkc-floating-close-v31 .actions{align-items:center}
+.tkc-floating-close-v31 .whatsapp-icon-slot img{filter:brightness(0) saturate(100%)!important}
+body:has(>main .tkc-floating-close-v31) .tkc-floating-close-v31 .button.secondary{background:#fff!important}
+.tkc-security-icon-v32{min-height:135px!important;height:145px!important;display:grid!important;place-items:center!important;overflow:hidden!important}
+.tkc-security-icon-v32 img{width:min(85%,210px)!important;height:128px!important;max-width:none!important;max-height:130px!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;transform:none!important;transition:transform .3s ease!important}
+.service-card:hover .tkc-security-icon-v32 img{transform:scale(1.08) translateY(-3px)!important}
+/* Security line: amber accents with soft warm tinted card */
+body[style*="--accent:#EEA400"] .tkc-floating-close-v31{--tkc-card-tint:#fff2d8;background:linear-gradient(120deg,#fff0cc,#fff8e9 55%,#ffe4ae)!important}
+body[style*="--accent:#EEA400"] .tkc-floating-close-v31 .eyebrow,body[style*="--accent:#EEA400"] .tkc-floating-close-v31 h2 em{color:#be7600!important}
+/* Hidriko: water-inspired tint */
+body:has(.tkc-floating-close-v31) .tkc-floating-close-v31:not(.tkc-close-corp-v30):not(.tkc-close-home-v30){--tkc-card-tint:#e6f6fc}
+body[style*="--accent:#008"] .tkc-floating-close-v31{background:linear-gradient(120deg,#d6f2f8,#ecfbfe,#d2edf7)!important}
+/* Client floating CTA: icon never overlays content */
+.tkc-client-zone-v31 .client-float{position:relative!important;display:grid!important;grid-template-columns:minmax(0,1fr) 100px!important;column-gap:20px!important;align-items:start!important;max-width:990px!important;box-sizing:border-box!important}
+.tkc-client-zone-v31 .client-symbol{position:static!important;float:none!important;grid-column:2!important;grid-row:1 / span 5!important;justify-self:end!important;margin:0!important;transform:none!important;width:82px!important;height:82px!important;display:grid!important;place-items:center!important}
+.tkc-client-zone-v31 .client-symbol svg{width:45px!important;height:45px!important}
+.tkc-client-zone-v31 .client-float>:not(.client-symbol){grid-column:1!important;position:relative!important;z-index:1!important}
+.tkc-client-zone-v31 .client-float h2{font-size:clamp(32px,3.5vw,52px)!important;margin-block:12px 17px!important}
+.tkc-client-zone-v31 .client-float p{font-size:clamp(16px,1.4vw,20px)!important;line-height:1.65!important;max-width:680px!important}
+/* Como trabajamos floating card: constrain giant card and keep readable type */
+.tkc-general-process-v31{width:min(1050px,calc(100% - 36px))!important;max-width:1050px!important;margin:50px auto!important;padding:clamp(32px,4vw,58px)!important;box-sizing:border-box!important;min-height:0!important}
+.tkc-general-process-v31 .extra-copy{width:auto!important;max-width:600px!important}
+.tkc-general-process-v31 h2{font-size:clamp(35px,4vw,54px)!important;line-height:1.13!important}
+.tkc-general-process-v31 p{font-size:clamp(17px,1.5vw,21px)!important;line-height:1.6!important}
+.tkc-general-process-v31 img.close-art{width:min(28vw,255px)!important;max-height:260px!important}
+@media(max-width:760px){.tkc-client-zone-v31 .client-float{grid-template-columns:1fr!important}.tkc-client-zone-v31 .client-symbol{grid-column:1!important;grid-row:1!important;justify-self:start!important;margin-bottom:16px!important}.tkc-client-zone-v31 .client-float>:not(.client-symbol){grid-column:1!important}.tkc-general-process-v31{padding:28px!important}.tkc-security-icon-v32{min-height:115px!important;height:120px!important}.tkc-security-icon-v32 img{height:112px!important}}

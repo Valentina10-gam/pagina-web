@@ -1,0 +1,8 @@
+
+/* V11: highlighted independent client portal link */
+.nav-center .tkc-zona-clientes,.nav-items .tkc-zona-clientes{display:inline-flex;align-items:center;gap:6px;padding:7px 12px!important;border:1px solid rgba(56,185,236,.35)!important;border-radius:999px;background:rgba(56,185,236,.10);color:#250045!important;font-weight:600!important;white-space:nowrap;transition:transform .25s ease,background .25s ease,box-shadow .25s ease!important;text-decoration:none!important}
+.nav-center .tkc-zona-clientes:hover,.nav-items .tkc-zona-clientes:hover{background:rgba(56,185,236,.25)!important;transform:translateY(-2px);box-shadow:0 7px 18px rgba(37,0,69,.10)}
+.nav-center .tkc-zona-clientes:after,.nav-items .tkc-zona-clientes:after{display:none!important}
+.blog-links .tkc-zona-clientes{color:#fff!important;padding:7px 12px;border:1px solid rgba(56,185,236,.6);background:rgba(56,185,236,.17);border-radius:999px;font-weight:600;white-space:nowrap;transition:.25s ease}
+.blog-links .tkc-zona-clientes:hover{background:#38b9ec;color:#250045!important;transform:translateY(-2px)}
+@media(max-width:900px){.nav-center .tkc-zona-clientes,.blog-links .tkc-zona-clientes{width:max-content;max-width:100%;margin-block:4px}}

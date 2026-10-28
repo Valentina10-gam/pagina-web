@@ -1,0 +1,14 @@
+
+/* TKC · navbar corporativo aprobado · aplicado a todas las páginas */
+.header-wrap {background:#250045!important;box-shadow:0 7px 25px rgba(37,0,69,.12)!important;}
+.nav {background:#250045!important;border-color:#250045!important;box-shadow:none!important;}
+.nav-items>a:not(.nav-contact), .nav-dropdown-toggle {color:#fff!important;}
+.nav-items>a:not(.nav-contact):hover,.nav-items>a.active,.nav-dropdown-toggle:hover,.nav-dropdown-toggle[aria-expanded="true"] {color:#68d1ff!important;}
+.nav-items>a:not(.nav-contact):after {background:#59c9f7!important;}
+.nav-items>a.nav-contact {background:#38b9ec!important;border:1px solid #38b9ec!important;color:#250045!important;font-weight:600!important;box-shadow:0 7px 18px #12002329!important;transition:background .25s,color .25s,transform .25s,box-shadow .25s!important;}
+.nav-items>a.nav-contact:hover,.nav-items>a.nav-contact:focus-visible {background:#fff!important;color:#250045!important;transform:translateY(-3px);box-shadow:0 12px 25px #12002344!important;}
+.nav-dropdown-menu{background:#fff!important;}
+.nav-dropdown-menu a{color:#250045!important;}
+.nav-dropdown-menu a:hover,.nav-dropdown-menu a:focus-visible{background:#ebf8ff!important;color:#0077aa!important;}
+.mobile-menu {background:#38b9ec!important;color:#250045!important;}
+@media(max-width:750px){.nav-items{background:#250045!important;border:1px solid #4d2671!important;}.nav-dropdown-menu{background:#351454!important;}.nav-dropdown-menu a{color:#fff!important;}.nav-dropdown-menu a:hover{color:#250045!important;}}

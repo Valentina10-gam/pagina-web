@@ -1,0 +1,10 @@
+/* V14: navegacion coherente y control de iconos flotantes */
+.tkc-float-whatsapp{position:fixed!important;right:22px!important;bottom:22px!important;z-index:99999!important;display:inline-flex!important;align-items:center!important;gap:10px!important;width:auto!important;height:54px!important;min-height:54px!important;max-width:210px!important;padding:10px 17px!important;border-radius:999px!important;background:#25d366!important;color:#073c26!important;font-size:14px!important;line-height:1!important;overflow:hidden!important;box-shadow:0 12px 32px #06442b44!important;transform:none;}
+.tkc-float-whatsapp svg,.tkc-float-whatsapp svg *{box-sizing:border-box}.tkc-float-whatsapp svg{width:26px!important;height:26px!important;min-width:26px!important;max-width:26px!important;min-height:26px!important;max-height:26px!important;display:block!important;flex:0 0 26px!important;position:static!important;transform:none!important;}
+.tkc-float-whatsapp span{display:inline!important;white-space:nowrap!important;font-size:14px!important;line-height:1.2!important;font-weight:700!important;color:#073c26!important}
+.tkc-float-whatsapp:hover{transform:translateY(-4px)!important;box-shadow:0 18px 38px #06442b55!important}
+@media(max-width:650px){.tkc-float-whatsapp{width:54px!important;height:54px!important;padding:13px!important;right:14px!important;bottom:15px!important}.tkc-float-whatsapp span{display:none!important}}
+/* Blog: mismo esquema de navegacion claro del sitio */
+.blog-nav{background:rgba(255,255,255,.90)!important;min-height:76px!important;backdrop-filter:blur(14px)!important;-webkit-backdrop-filter:blur(14px)!important;box-shadow:0 5px 24px #25004512!important;border-bottom:1px solid #25004514!important}
+.blog-links a,.blog-links summary{color:#250045!important}.blog-links a:hover,.blog-links a.active,.blog-links summary:hover{color:#0799ce!important}.blog-nav .blog-cta{background:#38b9ec!important;color:#250045!important}
+.blog-nav .blog-brand img{content:url('../shared-assets/logo-horizontal-oficial.png')!important}

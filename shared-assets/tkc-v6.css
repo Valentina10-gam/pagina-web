@@ -1,0 +1,28 @@
+/* TKC V6 — navegación tripartita inspirada en la referencia, identidad TKC */
+@media(min-width:751px){
+ .header-wrap .nav{position:relative;display:flex!important;align-items:center!important;width:100%;max-width:1510px;min-height:103px;gap:16px;padding:12px 32px}
+ .header-wrap .nav .brand{flex:0 0 auto;position:relative;z-index:3}
+ .header-wrap .nav .nav-items{display:flex!important;flex:1;justify-content:flex-end;align-items:center;min-width:0}
+ .header-wrap .nav .nav-center{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:clamp(12px,1.35vw,26px);align-items:center;justify-content:center;white-space:nowrap;z-index:2}
+ .header-wrap .nav .nav-center>a{font-size:clamp(12px,.91vw,15px);font-weight:500;color:#fff;transition:color .25s}
+ .header-wrap .nav .nav-center>a:hover,.header-wrap .nav .nav-center>a.active{color:#43c5f1}
+ .header-wrap .nav .nav-contact{margin-left:auto!important;position:relative;z-index:4;white-space:nowrap}
+}
+.header-wrap .nav .nav-contact{border-radius:999px!important;background:#38b9ec!important;color:#250045!important;font-weight:600!important;padding:15px 29px!important;box-shadow:0 9px 22px #12002026;transition:transform .25s,background .25s,box-shadow .25s}
+.header-wrap .nav .nav-contact:hover{background:#fff!important;color:#250045!important;transform:translateY(-3px);box-shadow:0 14px 29px #12002042}
+.header-wrap .nav .nav-center .nav-dropdown-toggle{color:#fff;font-weight:500}
+.header-wrap .nav .nav-center .nav-dropdown-toggle:hover{color:#38b9ec}
+@media(min-width:751px) and (max-width:1300px){.header-wrap .nav .brand img{width:clamp(170px,17vw,220px)}.header-wrap .nav .nav-center{gap:12px;left:51%}.header-wrap .nav .nav-center>a,.header-wrap .nav .nav-center .nav-dropdown-toggle{font-size:12px}.header-wrap .nav .nav-contact{padding:12px 17px!important;font-size:13px!important}}
+@media(max-width:750px){.header-wrap .nav .nav-items .nav-center{display:flex;flex-direction:column;align-items:stretch;gap:8px;width:100%}.header-wrap .nav .nav-center>a{font-size:16px;font-weight:500;color:#fff;padding:7px}.header-wrap .nav .nav-items{background:#250045!important}.header-wrap .nav .nav-center .nav-dropdown-toggle{color:white}.header-wrap .nav .nav-contact{display:block;text-align:center;margin-top:12px}}
+/* Respaldos: tres tarjetas elevadas y animadas, texto e íconos intactos */
+.backing .stats{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:20px!important;max-width:1150px!important;margin:42px auto 35px!important}
+.backing .stats .stat-item{position:relative;display:flex;align-items:center;justify-content:center;gap:15px;min-height:158px;padding:22px 17px!important;border:1px solid #e2dbf2!important;border-radius:24px;background:linear-gradient(145deg,#fff,#f6faff);box-shadow:0 14px 32px #25004512;overflow:hidden;animation:tkcStatFloat 5.5s ease-in-out infinite alternate;transition:box-shadow .3s,border-color .3s}
+.backing .stats .stat-item:nth-child(2){animation-delay:-1.9s}.backing .stats .stat-item:nth-child(3){animation-delay:-3.6s}
+.backing .stats .stat-item:after{content:"";position:absolute;right:-20px;top:-22px;width:88px;height:88px;clip-path:polygon(50% 0,100% 100%,0 100%);background:#38b9ec12;pointer-events:none}
+.backing .stats .stat-item:hover{animation-play-state:paused;transform:translateY(-10px);border-color:#38b9ec;box-shadow:0 26px 45px #25004522}
+.backing .stats .stat-item img{max-width:75px;width:75px;height:75px;object-fit:contain;position:relative;z-index:2}
+.backing .stats .stat-item strong{font-size:clamp(22px,2.1vw,34px);line-height:1.05}
+.backing .stats .stat-item span{font-size:19px}
+@keyframes tkcStatFloat{from{transform:translateY(3px)}to{transform:translateY(-7px)}}
+@media(max-width:750px){.backing .stats{grid-template-columns:1fr!important;max-width:420px!important}.backing .stats .stat-item{min-height:130px;justify-content:flex-start!important}}
+@media(prefers-reduced-motion:reduce){.backing .stats .stat-item{animation:none!important}}

@@ -1,0 +1,45 @@
+/* V31 · Floating content cards: shared component, isolated from navigation */
+.tkc-floating-close-v31{position:relative!important;display:block!important;padding:clamp(45px,6vw,100px) clamp(18px,4vw,64px)!important;isolation:isolate;overflow:hidden;background-image:none!important;background:linear-gradient(128deg,#e8f3ff 0%,#e9f7fc 48%,#e8e8fc 100%)!important;color:#250045!important}
+.tkc-floating-close-v31::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(125deg,transparent 45%,rgba(65,185,236,.16) 70%,transparent 100%);pointer-events:none}
+.tkc-floating-close-inner-v31{width:min(1320px,100%);margin-inline:auto;padding:clamp(30px,4.2vw,70px);display:grid;grid-template-columns:minmax(0,1.55fr) minmax(220px,.75fr);align-items:center;gap:clamp(16px,3vw,48px);border-radius:32px;background:linear-gradient(116deg,rgba(255,255,255,.98),rgba(255,255,255,.9));box-shadow:0 22px 75px rgba(32,14,75,.13),0 0 0 1px rgba(68,47,133,.09);transition:transform .4s ease,box-shadow .4s ease;position:relative;z-index:1}
+.tkc-floating-close-inner-v31:hover{transform:translateY(-6px);box-shadow:0 34px 85px rgba(32,14,75,.18)}
+.tkc-floating-close-v31 h2{color:#250045!important;font-size:clamp(30px,4vw,58px)!important;line-height:1.12!important}
+.tkc-floating-close-v31 h2 em{color:var(--accent,#34b7ea)!important}
+.tkc-floating-close-v31 p{color:#4a5071!important;font-size:clamp(16px,1.3vw,20px)!important}
+.tkc-floating-close-v31 .eyebrow{color:var(--accent,#02799d)!important}
+.tkc-floating-close-v31 .close-graphic{width:100%!important;max-width:360px!important;min-height:unset!important;height:auto!important;justify-self:center;display:grid!important;place-items:center!important}
+.tkc-floating-close-v31 .close-graphic img{width:min(100%,350px)!important;max-width:350px!important;max-height:340px!important;object-fit:contain!important;display:block!important;filter:none!important;animation:tkcFloatV31 6s ease-in-out infinite!important}
+.tkc-floating-close-v31 .actions{display:flex!important;gap:14px!important;flex-wrap:wrap!important}
+.tkc-floating-close-v31 .button{font-weight:600!important;white-space:normal!important}
+.tkc-floating-close-v31 .button.secondary{color:#250045!important;border:1.5px solid rgba(37,0,69,.26)!important;background:white!important}
+.tkc-floating-close-v31 .whatsapp-icon-slot{height:25px!important;width:25px!important;flex:0 0 25px!important}
+.tkc-floating-close-v31 .whatsapp-icon-slot img{height:23px!important;width:23px!important;filter:brightness(0) saturate(100%)!important}
+.tkc-floating-close-v31 .whatsapp-cta{display:inline-flex!important;align-items:center!important;gap:8px!important}
+.tkc-floating-close-v31.tkc-close-corp-v30{background:linear-gradient(120deg,#d8eef8,#effaff 58%,#dbe9fa)!important}
+.tkc-floating-close-v31.tkc-close-home-v30{background:linear-gradient(120deg,#d7f8f5,#f1fcfd 56%,#e3f3fa)!important}
+body:has(.tkc-floating-close-v31) .tkc-floating-close-v31 .close-graphic{background:none!important;border:0!important;box-shadow:none!important}
+body:has(.tkc-floating-close-v31) .tkc-floating-close-v31 .close-graphic::before,body:has(.tkc-floating-close-v31) .tkc-floating-close-v31 .close-graphic::after{display:none!important}
+/* Home section with its own source artwork and complete floating panel */
+.tkc-home-feature-v31{display:block!important;padding:clamp(50px,6vw,95px) clamp(18px,4vw,64px)!important;background:linear-gradient(115deg,#e2f8f9,#f4fdff,#e7f3ff)!important}
+.tkc-floating-feature-inner-v31{width:min(1300px,100%);margin-inline:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,1fr);align-items:center;gap:clamp(24px,4vw,65px);border:1px solid #d8edf5;border-radius:32px;background:rgba(255,255,255,.91);padding:clamp(28px,4vw,65px);box-shadow:0 24px 66px rgba(0,96,125,.12);transition:transform .35s ease,box-shadow .35s ease}
+.tkc-floating-feature-inner-v31:hover{transform:translateY(-5px);box-shadow:0 32px 80px rgba(0,96,125,.17)}
+.tkc-home-feature-v31 .extra-decoration{width:100%!important;min-height:unset!important;height:auto!important;max-width:100%!important;background:transparent!important;border:0!important;box-shadow:none!important;display:grid!important;place-items:center!important;overflow:visible!important}
+.tkc-home-feature-v31 .extra-decoration img{display:block!important;width:min(100%,480px)!important;max-height:410px!important;object-fit:contain!important;animation:tkcFloatV31 7s ease-in-out infinite!important}
+.tkc-home-feature-v31 .extra-copy{max-width:100%!important}
+/* Client zone and documentation: floating panels on tinted backdrops */
+.tkc-client-zone-v31{background:linear-gradient(120deg,#e8f4ff,#efeeff)!important;padding:clamp(55px,7vw,100px) 22px!important}
+.tkc-client-zone-v31 .client-float{width:min(100%,1000px)!important;max-width:1000px!important;margin-inline:auto!important;padding:clamp(30px,5vw,68px)!important;background:#fff!important;border-radius:32px!important;box-shadow:0 30px 85px rgba(37,0,69,.14)!important;transition:transform .35s ease!important}
+.tkc-client-zone-v31 .client-float:hover{transform:translateY(-6px)!important}
+.tkc-document-card-v31{background:linear-gradient(115deg,#e6f4fc,#f6f9ff)!important;padding:clamp(40px,6vw,85px)!important}
+.tkc-document-card-v31 .extra-copy,.tkc-document-card-v31 .feature-image-slot{border-radius:24px!important}
+.tkc-process-close-v31{border-radius:24px!important}
+@keyframes tkcFloatV31{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
+@media(max-width:800px){.tkc-floating-close-inner-v31,.tkc-floating-feature-inner-v31{grid-template-columns:1fr!important}.tkc-floating-close-v31 .close-graphic{max-width:270px!important}.tkc-floating-close-v31 .close-graphic img{max-height:245px!important}.tkc-floating-feature-inner-v31 .extra-decoration{grid-row:2!important}.tkc-home-feature-v31 .extra-decoration img{max-height:290px!important}.tkc-floating-close-v31 .actions .button{max-width:100%}}
+@media(prefers-reduced-motion:reduce){.tkc-floating-close-v31 .close-graphic img,.tkc-home-feature-v31 .extra-decoration img{animation:none!important}.tkc-floating-close-inner-v31,.tkc-floating-feature-inner-v31{transition:none!important}}
+
+/* Additional floating general end-cap sections without changing original navigation */
+.tkc-general-contact-v31,.tkc-general-about-v31,.tkc-general-process-v31{position:relative!important;isolation:isolate;margin:clamp(30px,4vw,65px) auto!important;max-width: min(1320px,calc(100% - 36px))!important;border-radius:30px!important;box-shadow:0 25px 75px rgba(33,12,75,.18)!important;overflow:hidden!important;transition:transform .4s ease,box-shadow .4s ease!important}
+.tkc-general-contact-v31:hover,.tkc-general-about-v31:hover,.tkc-general-process-v31:hover{transform:translateY(-5px)!important;box-shadow:0 33px 90px rgba(33,12,75,.22)!important}
+.tkc-general-contact-v31 img.chat-art,.tkc-general-about-v31 img.about-cta-art,.tkc-general-process-v31 img.close-art{width:min(32vw,320px)!important;height:auto!important;max-height:310px!important;object-fit:contain!important;animation:tkcFloatV31 6s ease-in-out infinite!important}
+@media(max-width:750px){.tkc-general-contact-v31 img.chat-art,.tkc-general-about-v31 img.about-cta-art,.tkc-general-process-v31 img.close-art{width:min(65vw,260px)!important;max-height:230px!important}}
+@media(prefers-reduced-motion:reduce){.tkc-general-contact-v31 img.chat-art,.tkc-general-about-v31 img.about-cta-art,.tkc-general-process-v31 img.close-art{animation:none!important}}

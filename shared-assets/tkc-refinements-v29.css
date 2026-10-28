@@ -1,0 +1,21 @@
+
+/* TKC visual refinements V29 */
+.about-hero.about-hero-image-background{background-image:linear-gradient(105deg,rgba(255,255,255,.90) 0%,rgba(242,248,255,.78) 52%,rgba(229,240,255,.69) 100%),url('integrados/about-hero-back.webp')!important;background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important;min-height:clamp(480px,68vh,640px)!important;padding-block:85px 65px!important}
+.about-hero.about-hero-image-background .about-hero-content{max-width:900px!important;padding:24px;border-radius:30px}
+.about-hero.about-hero-image-background h1{font-size:clamp(2.7rem,5.2vw,5.2rem)!important}
+.service-card-icon-enhanced .service-visual{width:108px!important;height:108px!important;min-height:0!important;max-width:108px!important;max-height:108px!important;display:flex!important;align-items:center!important;justify-content:center!important;border-radius:22px!important;margin:0 auto 17px!important;overflow:visible!important;box-shadow:0 8px 25px rgba(29,60,110,.09)!important}
+.service-card-icon-enhanced .service-visual img{display:block!important;width:75px!important;height:75px!important;max-width:75px!important;max-height:75px!important;object-fit:contain!important;position:static!important;transform:none!important;opacity:1!important;filter:none!important}
+.service-card-icon-enhanced{display:flex!important;flex-direction:column!important;align-items:stretch!important;min-height:unset!important;padding:25px 26px!important}
+.service-card-icon-enhanced h3{font-size:clamp(1.2rem,1.8vw,1.55rem)!important;margin:0 0 10px!important}
+.service-card-icon-enhanced p{line-height:1.6!important}
+.service-card-icon-enhanced:hover .service-visual{transform:translateY(-5px) scale(1.05)!important;transition:transform .3s ease}
+.extra .extra-decoration.tkc-filled-media{height:auto!important;min-height:280px!important;aspect-ratio: 1.42!important;display:flex!important;align-items:center!important;justify-content:center!important;background:transparent!important;overflow:visible!important;border:0!important;box-shadow:none!important}
+.extra .extra-decoration.tkc-filled-media img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:480px!important;position:static!important;object-fit:contain!important;opacity:1!important;transform:none!important}
+.corp-close-custom{background-image:linear-gradient(90deg,rgba(0,92,135,.92),rgba(0,121,158,.77)),url('integrados/corp-close-back.webp')!important;background-size:cover!important;background-position:center!important}
+.corp-close-custom .line-brand-graphic{max-width:min(440px,100%)!important;object-fit:contain!important}
+.tkc-filled-media{position:relative}
+.tkc-whatsapp-float img.tkc-wa-white{width:25px;height:25px;object-fit:contain}
+@media(max-width:760px){.about-hero.about-hero-image-background{padding:90px 22px 55px!important;min-height:auto!important}.service-card-icon-enhanced .service-visual{width:94px!important;height:94px!important}.service-card-icon-enhanced .service-visual img{width:68px!important;height:68px!important}.extra .extra-decoration.tkc-filled-media{min-height:220px!important}}
+@media(prefers-reduced-motion:reduce){.service-card-icon-enhanced:hover .service-visual{transform:none!important}}
+.tkc-float-whatsapp img.tkc-wa-white{width:34px!important;height:34px!important;max-width:34px!important;max-height:34px!important;flex:0 0 34px!important;display:block!important}
+@media(max-width:767px){.tkc-float-whatsapp img.tkc-wa-white{width:30px!important;height:30px!important;flex-basis:30px!important}}

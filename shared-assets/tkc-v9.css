@@ -1,0 +1,23 @@
+/* TKC V9 — barra blanca translúcida compacta y respaldo legible */
+:root {--tkc-nav-ink:#250045;}
+html{scroll-padding-top:84px}
+.header-wrap,.header-wrap.header-wrap{position:sticky!important;top:0!important;left:0!important;right:0!important;z-index:1000!important;background:rgba(255,255,255,.88)!important;border-bottom:1px solid rgba(37,0,69,.075)!important;box-shadow:0 5px 22px rgba(37,0,69,.055)!important;-webkit-backdrop-filter:blur(12px) saturate(130%)!important;backdrop-filter:blur(12px) saturate(130%)!important;padding:0!important;width:100%!important;}
+.header-wrap .nav,.header-wrap .nav.nav{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;min-height:76px!important;height:auto!important;padding:8px clamp(18px,2.4vw,34px)!important;max-width:1600px!important;margin:auto!important;}
+.header-wrap .brand img{width:clamp(164px,15vw,213px)!important;max-height:61px!important;object-fit:contain!important}
+.header-wrap .nav .nav-center>a,.header-wrap .nav .nav-center .nav-dropdown-toggle,.header-wrap .nav-items>a:not(.nav-contact){color:#250045!important;font-weight:500!important}
+.header-wrap .nav .nav-center>a:hover,.header-wrap .nav .nav-center>a.active,.header-wrap .nav .nav-center .nav-dropdown-toggle:hover{color:#079ccc!important}
+.header-wrap .nav .nav-contact{background:#38b9ec!important;color:#250045!important;padding:12px 23px!important;font-weight:600!important;border-radius:999px!important;box-shadow:0 5px 16px #25004516!important}
+.header-wrap .nav .nav-contact:hover{background:#250045!important;color:#fff!important;transform:translateY(-2px)!important}
+.header-wrap .nav-dropdown-menu{background:rgba(255,255,255,.98)!important;box-shadow:0 15px 45px #2500451c!important;border:1px solid #eee7f4!important;border-radius:15px!important}
+.header-wrap .nav-dropdown-menu a{color:#250045!important}
+.header-wrap .nav-dropdown-menu a:hover{background:#eaf8fd!important;color:#077aa9!important}
+.header-wrap .nav-chevron{border-color:#250045!important}
+/* Reforzar escalas en los tres indicadores */
+.backing .stats{gap:22px!important;max-width:1450px!important;width:100%!important}
+.backing .stats .stat-item{min-height:195px!important;padding:30px 25px!important;gap:22px!important;overflow:visible!important}
+.backing .stats .stat-item img{width:clamp(86px,7vw,116px)!important;height:clamp(86px,7vw,116px)!important;max-width:none!important;flex-shrink:0!important}
+.backing .stats .stat-item strong{font-size:clamp(32px,2.75vw,47px)!important;font-weight:750!important;line-height:1.09!important;white-space:nowrap!important;letter-spacing:-.03em!important}
+.backing .stats .stat-item span{font-size:clamp(22px,1.6vw,27px)!important;line-height:1.2!important;white-space:nowrap!important;color:#3a2c5d!important}
+@media(max-width:1200px) and (min-width:751px){.backing .stats .stat-item{gap:10px!important;padding:18px 12px!important}.backing .stats .stat-item img{width:76px!important;height:76px!important}.backing .stats .stat-item strong{font-size:clamp(24px,2.6vw,34px)!important}.backing .stats .stat-item span{font-size:19px!important}}
+@media(max-width:750px){.header-wrap .nav{min-height:70px!important;padding:8px 17px!important}.header-wrap .brand img{width:175px!important}.header-wrap .mobile-menu{background:#250045!important;color:white!important}.header-wrap .nav .nav-items{background:#fff!important;border:1px solid #eae1f1!important;box-shadow:0 12px 35px #2500451c!important;top:67px!important}.header-wrap .nav .nav-center>a,.header-wrap .nav .nav-center .nav-dropdown-toggle{color:#250045!important}.header-wrap .nav-dropdown-menu{background:#f7f6fa!important}.backing .stats{grid-template-columns:1fr!important;max-width:560px!important}.backing .stats .stat-item{min-height:160px!important;justify-content:center!important}.backing .stats .stat-item img{width:100px!important;height:100px!important}.backing .stats .stat-item strong{font-size:35px!important}.backing .stats .stat-item span{font-size:23px!important}}
+@media(prefers-reduced-motion:reduce){.header-wrap,.backing .stat-item{transition:none!important}}
