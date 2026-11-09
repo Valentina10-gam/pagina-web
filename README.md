@@ -68,3 +68,7 @@ V31: paneles flotantes en cierres Corp/Home/Hídriko/Security, imagen de orienta
 
 
 V36: Hero a pantalla completa de Cómo trabajamos, nueva imagen de documentación e íconos de TKC Security restaurados en gran formato.
+
+
+## V43 SEO y TKC Security
+Ver `SEO_PENDIENTES_WORDPRESS.md` para cambios y actividades pendientes.

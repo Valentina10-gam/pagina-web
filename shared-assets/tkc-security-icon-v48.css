@@ -1,0 +1,28 @@
+/* TKC V48 — Equilibrio óptico del ícono de desinfección en Security.
+   Se mantiene el PNG original, sin deformarlo ni modificar los demás íconos. */
+.service-card.tkc-icon-feature-card .service-visual.tkc-security-desinfeccion-v48 img {
+  width: 112px !important;
+  height: 112px !important;
+  max-width: 112px !important;
+  max-height: 112px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+@media (max-width: 1100px) {
+  .service-card.tkc-icon-feature-card .service-visual.tkc-security-desinfeccion-v48 img {
+    width: 96px !important; height: 96px !important;
+    max-width: 96px !important; max-height: 96px !important;
+  }
+}
+@media (max-width: 720px) {
+  .service-card.tkc-icon-feature-card .service-visual.tkc-security-desinfeccion-v48 img {
+    width: 94px !important; height: 94px !important;
+    max-width: 94px !important; max-height: 94px !important;
+  }
+}
+@media (max-width: 390px) {
+  .service-card.tkc-icon-feature-card .service-visual.tkc-security-desinfeccion-v48 img {
+    width: 74px !important; height: 74px !important;
+    max-width: 74px !important; max-height: 74px !important;
+  }
+}

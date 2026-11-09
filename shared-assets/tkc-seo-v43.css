@@ -1,0 +1,6 @@
+/* TKC V43: contenido SEO y 4ta tarjeta Security. No modifica la marca ni el navbar. */
+.tkc-seo-intro{max-width:780px;margin:15px 0 0;color:#5b5366;font-size:clamp(16px,1.35vw,19px);line-height:1.55}
+#servicios .services-grid.tkc-four-services-v43{grid-template-columns:repeat(2,minmax(0,1fr));max-width:1180px;margin-left:auto;margin-right:auto;gap:clamp(16px,2vw,24px)}
+#servicios .tkc-four-services-v43 .service-card{min-width:0}
+#servicios .tkc-four-services-v43 .service-visual img{object-fit:contain}
+@media(max-width:700px){#servicios .services-grid.tkc-four-services-v43{grid-template-columns:1fr;gap:16px}}
