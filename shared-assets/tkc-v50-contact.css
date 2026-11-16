@@ -1,0 +1,19 @@
+/* TKC V50 / Contacto y cobertura nacional */
+.tkc-v50-national{position:relative;isolation:isolate;overflow:hidden;padding:clamp(65px,8vw,110px) clamp(20px,5vw,80px);background:linear-gradient(115deg,#f9faff 0%,#eff9fe 70%,#eef0fb 100%);}
+.tkc-v50-national::before{content:"";position:absolute;inset:-100px auto auto -170px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,#38b9ec18 0%,transparent 70%);pointer-events:none}
+.tkc-v50-national-layout{position:relative;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(35px,6vw,90px);align-items:center}
+.tkc-v50-national-text{max-width:610px}.tkc-v50-kicker{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.18em;color:#0388c6;margin-bottom:22px}
+.tkc-v50-national h2{font-family:inherit;font-size:clamp(38px,4.4vw,68px);letter-spacing:-.045em;line-height:1.1;color:#250045;margin:0 0 26px;font-weight:800}
+.tkc-v50-national h2 em{font-style:normal;color:#31b2e7}.tkc-v50-national-text>p{font-size:clamp(17px,1.35vw,20px);line-height:1.7;color:#53536c;margin:0 0 26px}
+.tkc-v50-national-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}.tkc-v50-national-badges span{border:1px solid #dbe2f2;border-radius:40px;padding:10px 14px;background:#ffffffb8;color:#250045;font-size:13px;font-weight:700}
+.tkc-v50-national-action{display:inline-flex!important;align-items:center;text-decoration:none!important}
+.tkc-v50-national-visual{min-width:0;display:flex;align-items:center;justify-content:center}.tkc-v50-national-map{width:min(100%,440px);padding:22px 14px 16px;border:1px solid #e3eaf7;background:linear-gradient(155deg,#ffffffed,#f4faffdd);border-radius:30px;box-shadow:0 24px 80px #25004511;text-align:center}
+.tkc-v50-national-map img{display:block;width:100%;height:clamp(290px,33vw,475px);object-fit:contain;max-width:100%;margin:auto}
+.tkc-v50-map-caption{display:block;font-size:12px;letter-spacing:.14em;color:#25004599;font-weight:800;margin-top:6px}
+#canales .tkc-phone-list{display:flex;flex-direction:column;gap:11px}#canales .tkc-phone-list a{display:block;width:fit-content;text-decoration:none;color:#0675a9;font-weight:600;line-height:1.5}#canales .tkc-phone-list a:hover{text-decoration:underline}
+/* Siempre representar el icono del botón con SVG inline; no depende de imágenes remotas ni de archivos auxiliares. */
+.tkc-float-whatsapp svg{display:block!important;visibility:visible!important;opacity:1!important;fill:currentColor!important;color:#ffffff!important;width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important;flex:0 0 32px!important;overflow:visible!important;transform:none!important}
+.tkc-float-whatsapp svg path{fill:currentColor!important;stroke:none!important}
+.tkc-float-whatsapp{overflow:visible!important}
+@media(max-width:800px){.tkc-v50-national-layout{grid-template-columns:1fr;gap:30px}.tkc-v50-national{padding:70px 22px}.tkc-v50-national-map{max-width:390px}.tkc-v50-national-map img{height:350px}}
+@media(max-width:480px){.tkc-v50-national{padding:58px 18px}.tkc-v50-national h2{font-size:38px}.tkc-v50-national-map img{height:290px}.tkc-v50-national-badges span{font-size:12px}.tkc-float-whatsapp svg{width:30px!important;height:30px!important;min-width:30px!important;min-height:30px!important;flex-basis:30px!important}}

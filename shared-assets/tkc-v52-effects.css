@@ -1,0 +1,25 @@
+/* V52: unified header on Policies, lively but accessible hover effects, unboxed national imagery. */
+.v51-page .tkc-shell-header{font-family:"proxima-nova",Arial,sans-serif}
+.v51-page .tkc-shell-header .tkc-shell-cta{margin-left:0}
+.v51-page .tkc-shell-header img{border:0;box-shadow:none;border-radius:0}
+.v51-page .tkc-shell-header a{transition:color .22s ease, background-color .22s ease, transform .22s ease,box-shadow .22s ease}
+.v51-page .tkc-shell-header .tkc-shell-cta:hover{transform:translateY(-2px)}
+/* Remove the rectangular panel, border and background, both in Contact and Home. */
+#cobertura-nacional .tkc-v50-national-map,
+#cobertura-nacional .tkc-v49-coverage-graphic,
+.tkc-v49-coverage-graphic.tkc-map-floating-wrap{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;border-radius:0!important;aspect-ratio:auto!important;overflow:visible!important;min-height:0!important}
+#cobertura-nacional .tkc-v49-coverage-graphic::before{content:none!important;display:none!important}
+#cobertura-nacional .tkc-map-floating-wrap{position:relative;display:flex;align-items:center;justify-content:center;perspective:900px;width:100%;max-width:680px;margin:auto}
+#cobertura-nacional .tkc-map-floating-wrap .tkc-colombia-floating{display:block!important;width:100%!important;max-width:min(100%,650px)!important;height:auto!important;max-height:600px!important;object-fit:contain!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;filter:drop-shadow(0 22px 22px rgba(19,61,100,.15));animation:tkc-map-bob-v52 5.4s ease-in-out infinite!important;transition:filter .35s ease,scale .35s ease!important;transform-origin:center center}
+#cobertura-nacional .tkc-map-floating-wrap:hover .tkc-colombia-floating{scale:1.055;filter:drop-shadow(0 29px 25px rgba(19,61,100,.28)) saturate(1.08)}
+@keyframes tkc-map-bob-v52{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-12px,0)}}
+.v51-page .v51-policy,.v51-page .v51-card,.v51-page .v51-rec,.v51-page .v51-innovation{transition:transform .32s ease,box-shadow .32s ease,border-color .32s ease}
+.v51-page .v51-policy:hover,.v51-page .v51-card:hover,.v51-page .v51-rec:hover,.v51-page .v51-innovation:hover{transform:translateY(-5px);box-shadow:0 20px 42px rgba(37,0,69,.13)}
+.v51-page .v51-innovation img{max-height:520px;object-fit:contain;background:#fff;transition:transform .35s ease,filter .35s ease}
+.v51-page .v51-innovation img:hover{transform:scale(1.018);filter:drop-shadow(0 10px 15px rgba(37,0,69,.10))}
+.v51-page .v51-btn,.v51-page .v51-jumps a,.v51-page .v51-policy-actions a{transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease}
+.v51-page .v51-btn:hover,.v51-page .v51-jumps a:hover,.v51-page .v51-policy-actions a:hover{transform:translateY(-3px);box-shadow:0 12px 25px rgba(37,0,69,.16)}
+#cobertura-nacional .tkc-v50-national-badges span,#cobertura-nacional .tkc-v49-whatsapp-links a{transition:transform .25s ease,box-shadow .25s ease}
+#cobertura-nacional .tkc-v50-national-badges span:hover,#cobertura-nacional .tkc-v49-whatsapp-links a:hover{transform:translateY(-3px);box-shadow:0 8px 16px rgba(37,0,69,.1)}
+@media(max-width:850px){#cobertura-nacional .tkc-map-floating-wrap{max-width:470px;margin:20px auto 0}#cobertura-nacional .tkc-colombia-floating{max-height:460px!important}}
+@media(prefers-reduced-motion:reduce){#cobertura-nacional .tkc-map-floating-wrap .tkc-colombia-floating{animation:none!important;transition:none!important} .v51-page .v51-policy,.v51-page .v51-card,.v51-page .v51-rec,.v51-page .v51-innovation,.v51-page .v51-btn{transition:none!important}}

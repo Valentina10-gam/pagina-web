@@ -1,0 +1,15 @@
+/* V54 – Cobertura nacional en Inicio: tarjeta compacta y CTA visible */
+#cobertura-nacional.tkc-v49-coverage{padding:40px 24px 52px!important;background:linear-gradient(120deg,#f5f9ff 0%,#f0f8ff 100%);overflow:visible}
+#cobertura-nacional .tkc-v49-coverage-inner{max-width:1180px;margin:0 auto;padding:clamp(26px,4vw,48px);background:#fff;border:1px solid #e2e9f7;border-radius:32px;box-shadow:0 22px 58px rgba(37,0,69,.09);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:clamp(22px,3vw,48px);align-items:center;overflow:visible}
+#cobertura-nacional .tkc-v49-coverage-inner h2{font-size:clamp(2.1rem,4.15vw,3.55rem)!important;line-height:1.08;margin:8px 0 18px}
+#cobertura-nacional .tkc-v49-coverage-inner p{font-size:clamp(.99rem,1.22vw,1.1rem);line-height:1.65;margin:0;max-width:510px}
+#cobertura-nacional .tkc-v49-coverage-kicker{display:none!important}
+#cobertura-nacional .tkc-v49-whatsapp-links{margin-top:26px}
+#cobertura-nacional .tkc-v49-whatsapp-links a.tkc-v54-cta{display:inline-flex!important;align-items:center;justify-content:center;gap:11px;min-height:54px;padding:15px 24px;border-radius:999px;background:#31b8ea!important;color:#220038!important;font-weight:800;font-size:1rem;letter-spacing:0;text-decoration:none;box-shadow:0 10px 25px rgba(25,145,206,.22);border:2px solid #31b8ea;transition:background-color .22s,transform .22s,box-shadow .22s,color .22s}
+#cobertura-nacional .tkc-v49-whatsapp-links a.tkc-v54-cta:hover,#cobertura-nacional .tkc-v49-whatsapp-links a.tkc-v54-cta:focus-visible{background:#250045!important;border-color:#250045;color:#fff!important;transform:translateY(-3px);box-shadow:0 16px 30px rgba(37,0,69,.22)}
+#cobertura-nacional .tkc-v49-whatsapp-links a.tkc-v54-cta:focus-visible{outline:3px solid #00a7e7;outline-offset:4px}
+#cobertura-nacional .tkc-v49-whatsapp-links a.tkc-v54-cta svg{width:21px;height:21px;flex-shrink:0;fill:currentColor}
+#cobertura-nacional .tkc-map-floating-wrap{max-width:545px!important}
+#cobertura-nacional .tkc-map-floating-wrap .tkc-colombia-floating{max-width:545px!important;max-height:475px!important}
+@media(max-width:820px){#cobertura-nacional.tkc-v49-coverage{padding:28px 14px 42px!important}#cobertura-nacional .tkc-v49-coverage-inner{grid-template-columns:1fr;padding:28px 22px;gap:15px;border-radius:24px}#cobertura-nacional .tkc-v49-whatsapp-links a.tkc-v54-cta{width:100%;max-width:360px;text-align:center}#cobertura-nacional .tkc-map-floating-wrap{max-width:440px!important}}
+@media(prefers-reduced-motion:reduce){#cobertura-nacional .tkc-v49-whatsapp-links a.tkc-v54-cta{transition:none!important}}

@@ -1,0 +1,3 @@
+VERSIÓN COMPLETA PARA PREVISUALIZACIÓN
+
+Incluye todas las carpetas de V49. IMPORTANTE: dos recursos de Security (imagen de acompañamiento e icono de desinfección) no estaban incluidos en la copia V49 completa disponible, por lo que se incluyen imágenes anteriores provisionales para evitar enlaces rotos. La versión publicada en GitHub dispone de las imágenes recientes originales. No sustituir los recursos de Security publicados por estas imágenes provisionales al hacer el despliegue final.

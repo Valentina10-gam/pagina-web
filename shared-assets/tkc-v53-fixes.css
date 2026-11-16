@@ -1,0 +1,22 @@
+/* TKC V53 – ajustes de previsualización */
+/* Regreso a Quiénes somos fuera de la navegación principal */
+.v53-return-wrap{max-width:1280px;margin:0 auto;padding:22px 28px 0;position:relative;z-index:2}
+.v53-return{display:inline-flex;align-items:center;gap:11px;color:#290044;background:#fff;border:1px solid #e1d7ed;padding:11px 19px;border-radius:999px;font-weight:750;text-decoration:none;box-shadow:0 8px 24px #2600440a;transition:transform .25s,box-shadow .25s,border-color .25s}
+.v53-return:hover{transform:translateX(-5px);box-shadow:0 12px 25px #26004422;border-color:#47bde8}
+/* Acceso HSEQ cerca del contenido, sin grandes espacios vacíos */
+.policy-panel .v53-policy-actions{grid-column:2;justify-content:flex-start;margin:12px 0 0;align-self:start}
+.policy-panel .v53-policy-actions a{font-weight:750;gap:11px;box-shadow:0 8px 20px #10002218}
+.policy-panel .v53-policy-actions a:hover{background:#eaf8ff}
+@media(max-width:750px){.policy-panel .v53-policy-actions{grid-column:1;margin-top:10px}.v53-return-wrap{padding:16px 20px 0}}
+/* Logos gestores realmente centrados y con la misma superficie visual */
+#gestores .partners-grid{display:flex!important;justify-content:center!important;align-items:stretch!important;gap:26px!important;max-width:850px!important;margin:35px auto 0!important}
+#gestores .partner-card{flex:0 1 380px;min-width:0;display:flex!important;align-items:center!important;justify-content:center!important;padding:30px!important;box-sizing:border-box!important}
+#gestores .partner-logo{display:block!important;width:100%!important;height:100px!important;max-width:285px!important;max-height:100px!important;object-fit:contain!important;object-position:center!important;margin:auto!important}
+@media(max-width:680px){#gestores .partners-grid{flex-direction:column!important;align-items:center!important}#gestores .partner-card{width:min(100%,390px);flex:auto;height:175px}}
+/* Ícono WhatsApp integrado y visible sin depender de imágenes o scripts */
+.tkc-whatsapp-icon.tkc-v53-whatsapp-art{width:210px!important;height:210px!important;max-width:100%!important;min-height:0!important;aspect-ratio:1!important;display:grid!important;place-items:center!important;border:0!important;border-radius:36px!important;background:linear-gradient(145deg,#e7fff4,#f6fffc)!important;box-shadow:0 15px 38px #006b3630!important;overflow:visible!important;justify-self:center!important;opacity:1!important;visibility:visible!important}
+.tkc-v53-wa-inner{display:grid;place-items:center;width:74%;aspect-ratio:1;background:linear-gradient(145deg,#26dc83,#03aa5b);border-radius:50%;box-shadow:inset 0 4px 10px #ffffff44,0 12px 30px #00995150;transition:transform .3s}
+.tkc-v53-wa-inner svg{width:77%;height:77%;display:block;filter:drop-shadow(0 2px 2px #00482333)}
+.tkc-v53-whatsapp-art:hover .tkc-v53-wa-inner{transform:scale(1.09) rotate(-3deg)}
+@media(max-width:700px){.tkc-whatsapp-icon.tkc-v53-whatsapp-art{width:158px!important;height:158px!important;grid-row:1!important}}
+@media(prefers-reduced-motion:reduce){.v53-return,.tkc-v53-wa-inner{transition:none!important}}
