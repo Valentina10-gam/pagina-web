@@ -1,0 +1,14 @@
+/* V55 - Aplicación del Manual ICONTEC E-GM-001: la marca original no se modifica.
+   El código debe acompañar al sello con tipografía Arial Narrow y color azul.
+   La fuente del código es independiente de la tipografía corporativa TKC. */
+.icontec-v55-mark{display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;gap:0!important;max-width:100%;margin-inline:auto!important;line-height:normal!important;}
+.icontec-v55-mark .cert-logo,.icontec-v55-mark .v51-iso{display:block!important;width:auto!important;max-width:100%!important;height:135px!important;object-fit:contain!important;object-position:center!important;margin:0 auto!important;filter:none!important;transform:none!important;}
+.icontec-v55-mark .icontec-v55-code{font-family:'Arial Narrow','Liberation Sans Narrow','Nimbus Sans Narrow',sans-serif!important;font-weight:400!important;font-style:normal!important;font-stretch:condensed!important;font-size:19px!important;letter-spacing:0!important;line-height:1.12!important;color:#008fc9!important;text-align:center!important;white-space:nowrap!important;display:block!important;margin:9px auto 0!important;padding:0!important;}
+/* Los sellos no participan en efectos de zoom/distorsión al pasar el cursor. */
+.cert-card:hover .icontec-v55-mark,.v51-card:hover .icontec-v55-mark{transform:none!important;filter:none!important;}
+.cert-card:hover .icontec-v55-mark img,.v51-card:hover .icontec-v55-mark img{transform:none!important;filter:none!important;}
+.cert-image-wrap:has(.icontec-v55-mark){height:auto!important;min-height:165px!important;display:flex!important;align-items:center!important;justify-content:center!important;}
+.v51-card .icontec-v55-mark .v51-iso{height:165px!important;}
+@media(max-width:750px){.icontec-v55-mark .cert-logo{height:118px!important}.icontec-v55-mark .icontec-v55-code{font-size:17px!important}.v51-card .icontec-v55-mark .v51-iso{height:145px!important}}
+
+.cert-card:hover .cert-image-wrap:has(.icontec-v55-mark){transform:none!important;filter:none!important;}
